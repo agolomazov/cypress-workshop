@@ -3,3 +3,5 @@ mochawesome-report
 cypress/videos
 cypress/screenshots
 cypress/results
+
+mochawesome.json
