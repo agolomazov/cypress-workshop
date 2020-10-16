@@ -1,0 +1,32 @@
+{
+  "name": "learn-cypress",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "npx cypress open",
+    "e2e-run": "npx cypress run",
+    "e2e-headless": "npx cypress run --headed",
+    "e2e:run": "npx cypress run --record --key 8d2c9547-770f-4d6f-bb2e-60b889dbfa46",
+    "e2e-all": "npx cypress run --browser chrome",
+    "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/* || true",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json"
+  },
+  "keywords": [],
+  "author": "Anton Golomazov",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.3.0",
+    "cypress-file-upload": "^4.1.1",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-xpath": "^1.6.0",
+    "junit-merge": "^2.0.0",
+    "mocha": "^8.1.3",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
